@@ -52,3 +52,46 @@ nav ul li:hover a{
 	text-decoration: none;
 }
 nav ul li a{color: white}
+aside h4{
+	padding: 5% 0;
+	border-bottom: 2px solid red
+}
+aside ul li{
+	padding: 2% 0;
+	border-bottom: 1px solid #ccc
+}
+aside ul li a{
+ color: #000;
+
+}
+.img-aside {
+ 	margin-top: 30px;
+}
+article h3{
+	padding: 2% 0;
+	border-bottom: 1px dotted #ccc;
+}
+.menu li{
+	padding: 1% 2%;
+
+}
+.menu li:hover a{
+	text-decoration: none;
+}
+.menu li:hover a h5{text-decoration: underline;}
+.menu li img{
+	margin-right: 1%;
+
+}
+.menu li a{color: #000}
+.dsthanhvien h5, #addthanhvien h5{
+	font-weight: bold;
+	padding:5% 2%
+}
+#addthanhvien{display: none;}
+footer{
+	background: #000;
+	height: 100px;
+	line-height:  100px;
+	color: #fff;
+}
