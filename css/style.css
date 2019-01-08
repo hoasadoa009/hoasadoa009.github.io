@@ -1,0 +1,54 @@
+p, h1,h2,h3,h4,h5,h6{
+	margin: 0;
+	padding: 0;
+}
+ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.active{
+	background: green
+}
+.wrap{
+	width: 80%;
+	margin: 0 auto;
+}
+.search,.login{
+	padding: 23% 0;
+	position: relative;
+}
+.search input{
+	width: 100%;
+	padding: 10px;
+}
+.search span{
+	padding: 3%;
+	
+	position: absolute;
+	right: 0;
+	bottom: 40%;
+}
+.search span:hover{
+	cursor: pointer;
+}
+nav{
+	background: #ccc;
+	height: 46px;
+}
+
+nav ul li{
+	padding: 1% 2%;
+	border-right: 1px solid #000;
+	float: left;
+ 	
+}
+nav ul li:hover{
+	background: green;
+	transition: all 1s;
+}
+nav ul li:hover a{
+	color: white;
+	text-decoration: none;
+}
+nav ul li a{color: white}
