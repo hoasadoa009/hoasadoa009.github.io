@@ -2,6 +2,7 @@ p, h1,h2,h3,h4,h5,h6{
 	margin: 0;
 	padding: 0;
 }
+body{background: #EBE7E7}
 ul{
 	margin: 0;
 	padding: 0;
@@ -94,4 +95,5 @@ footer{
 	height: 100px;
 	line-height:  100px;
 	color: #fff;
+	
 }

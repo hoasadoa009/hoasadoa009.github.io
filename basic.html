@@ -6,57 +6,58 @@
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+
 </head>
 <body>
-	<div class="wrap">
-		<header>
-			<div class="row">
-				<div class="col-md-4">
-					<a href="https://framgia.com/">
-						<img src="images/logo.png" alt="framgia Inc" class="img-fluid" >
-					</a>
-				</div> <!-- logo -->
-				<div class="col-md-4 text-center" >
-					<div class="search">
-						<input type="text" placeholder="Search ..." name="search">
-						<span><i class="fas fa-search"></i></span>
-					</div>
-				</div> <!-- search -->
-				<div class="col-md-4">
-					<div class="login text-center">
-						<a href="#">Đăng nhập</a> | <a href="#">Đăng kí</a>
-					</div>
-				</div> <!-- login -->
-		</header> <!-- end header -->
-<!-- ======================================== -->
-		<nav>
-			<ul>
-				<li class="active"><a href="#">Trang chủ</a></li>
-				<li><a href="#">Hình ảnh</a></li>
-				<li><a href="members.html">Thành viên</a></li>
-			</ul>
-		</nav> <!--end nav -->
-		<!-- ======================= -->
 
+	<div class="wrap">
+			<header>
+				<div class="row">
+					<div class="col-md-4">
+						<a href="https://framgia.com/">
+							<img src="images/logo.png" alt="framgia Inc" class="img-fluid" >
+						</a>
+					</div> <!-- logo -->
+					<div class="col-md-4 text-center" >
+						<div class="search">
+							<input type="text" placeholder="Search ..." name="search">
+							<span><i class="fas fa-search"></i></span>
+						</div>
+					</div> <!-- search -->
+					<div class="col-md-4">
+						<div class="login text-center">
+							<a href="#">Đăng nhập</a> | <a href="#">Đăng kí</a>
+						</div>
+					</div> <!-- login -->
+				</div>
+			</header> <!-- end header -->
+<!-- ======================================== -->
+			<nav>
+				<ul>
+					<li class="active"><a href="#">Trang chủ</a></li>
+					<li><a href="#">Hình ảnh</a></li>
+					<li><a href="#">Thành viên</a></li>
+				</ul>
+			</nav> <!--end nav -->
+			<!-- ======================= -->
+	
+		
 		<main>
 			<div class="row">
 				<div class="col-md-3">
 
 					<aside>
-						<div class="row">
 							<h4>Tin tức</h4>
 							<ul>
-								<li><a href="#">Xế hộp chạy lùi tông liên tiếp 2 xe</a></li>
-								<li><a href="#">Vé xe khách phục vụ tết Kỷ Hợi 2019 bắt đầu 'nóng'</a></li>
+								<li><a href="https://news.zing.vn/xe-hop-chay-lui-tong-lien-tiep-2-xe-may-va-oto-post906919.html" target="_blank">Xế hộp chạy lùi tông liên tiếp 2 xe</a></li>
+								<li><a href="https://laodong.vn/xa-hoi/ve-xe-khach-phuc-vu-tet-ky-hoi-2019-bat-dau-nong-650751.ldo" target="_parent">Vé xe khách phục vụ tết Kỷ Hợi 2019 bắt đầu 'nóng'</a></li>
 								<li><a href="#">Hai gã trộm đột nhập hàng loạt ngôi chùa ở miền Trung</a></li>
 							</ul>
-						</div>
-
-						<div class=" img-aside">
-							<a href="#">
-								<img src="images/img-aside.jpg" alt="anh-aside" width="" height="">
-							</a>
-						</div>
+							<div class=" img-aside">
+								<a href="#">
+									<img src="images/img-aside.jpg" alt="anh-aside" class="img-fluid">
+								</a>
+							</div>
 					</aside> <!-- aside -->
 				</div> 
 				<div class="col-md-9">
@@ -64,7 +65,7 @@
 						<div class="row">
 							<div class="col-md-6 dsthanhvien">
 								<h5>Danh sách thành viên</h5>
-								<button class="btn btn-info" onclick="addmember()">Add</button>
+								<button class="btn btn-info"  onclick="addmember()">Add</button>
 
 								<table border="1" class="text-center">
 									<thead>
@@ -73,6 +74,8 @@
 											<th>STT</th>
 											<th>Họ tên</th>
 										</tr>
+									</thead>
+									<tbody>
 										<tr>
 											<td>1</td>
 											<td>Chu Văn Huynh</td>
@@ -89,14 +92,14 @@
 											<td>4</td>
 											<td>Đỗ Bảo Trung</td>
 										</tr>
-									</thead>
+									</tbody>
 								</table>
 							</div>
 							<div class="col-md-6" id="addthanhvien">
 								<h5>Thêm thành viên</h5>
 								<form method="POST" action="#" name="addnhanvien" target="_blank">
 									<label for="hoten">Họ tên</label>
-									<input type="text" name="hoten" autofocus required placeholder="Họ tên ..."><br>
+									<input type="text" maxlength="30" name="hoten" autofocus required placeholder="Họ tên ..."><br>
 
 									<label for="tuoi">Tuổi</label>
 									<input type="number" name="tuoi" min="18" max="30" step="1" value="20"><br>
@@ -113,14 +116,14 @@
 									<br>
 
 									<label for="diachi">Địa chỉ</label>
-									<input type="" placeholder="Địa chỉ ..." list="listaddress" name="" required>
+									<input list="listaddress">
 									<datalist id="listaddress" >
 										<option value="Hà Nội">
 										<option value="Đẵng">
 										<option value="Hồ Chí Minh">
 									</datalist><br>
 
-									<input type="submit" value="GỬI" name="">
+									<input type="submit" value="GỬI" name="submit">
 								</form>
 							</div>
 						</div>
@@ -147,10 +150,12 @@
 				</div>
 			</div>
 		</main>  <!-- end main -->
-
-		<footer>
-			<p class="text-center">© 2019 Framgia Inc. All rights reserved.</p>
-		</footer>
+		
+		
+			<footer>
+				<p class="text-center">© 2019 Framgia Inc. All rights reserved.</p>
+			</footer>
+		
 	</div> <!-- end wrap -->
 
 
